@@ -1,0 +1,160 @@
+/* Estilo para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    /* Ajustes para o nav */
+    nav {
+        height: auto;
+        padding: 5px 0;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .logo {
+        margin-left: 15px;
+        text-align: center;
+    }
+
+    .logo-rodape, h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Oculta o botão Fale Conosco */
+    .fale-conosco {
+        display: none;
+    }
+
+    /* Botão fixo do WhatsApp */
+    .fixed_bn30 {
+        font-size: 14px;
+        padding: 0.5em 0.6em;
+        border-radius: 10px;
+        animation: flutuarButton 3s infinite ease-in-out;  
+    }
+
+    /* Ajustes para o título principal */
+    .text-container h1 {
+        font-size: 28px;
+        margin-top: 20%;
+    }
+
+    /* Ajustes para a palavra dinâmica */
+    .palavra-dinamica {
+        font-size: 24px;
+    }
+
+    /* Ajustes no footer */
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        justify-content: center;
+        padding-top: 15px;
+        gap: 15px;
+    }
+
+    .social-media a {
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Estilo para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    .headerUm {
+        padding: 50px 16px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hero-banner {
+        margin-top: -101px;
+    }
+
+    .separator {
+        margin-top: 390px;
+    }
+
+    .hero-banner h2 {
+        font-size: 36px;
+    }
+
+    .hero-banner p {
+        font-size: 18px;
+    }
+
+    /* Ajustes para o título principal */
+    .text-container h1 {
+        font-size: 28px;
+        margin-top: 20%;
+    }
+
+    .palavra-dinamica {
+        font-size: 24px;
+    }
+
+    /* Ajustes no footer */
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-rodape h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .whatsapp-link {
+        font-size: 18px;
+    }
+
+    .social-media {
+        justify-content: center;
+        padding-top: 15px;
+        gap: 15px;
+    }
+
+    .social-media a {
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+    /* Estilo para desktops (exibe o botão Fale Conosco apenas em desktops) */
+@media (min-width: 769px) {
+    .fale-conosco {
+        display: inline-block;
+    }
+}

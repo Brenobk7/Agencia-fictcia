@@ -1,0 +1,393 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Fonte */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 90%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: rgba(255, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 100%;
+   
+}
+
+@keyframes flutuarlogo {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-13px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Container de texto */
+.text-container {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.text-container h1 {
+    color: rgb(255, 255, 255);
+    font-size: 5.8rem;
+    font-family: "Lucida Console", Courier, monospace;
+    white-space: nowrap;
+}
+
+.palavra-dinamica {
+    text-decoration: underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; 
+    color: darkblue;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.palavra-dinamica:hover {
+    color: rgb(241, 0, 141); 
+}
+/* Logotipo */
+
+.logo{
+    flex:20%;
+    margin-left:10%;
+     /* border:1px solid red;  */
+    text-align: left;
+    animation: flutuarlogo 2s infinite ease-in-out;
+    
+}
+
+.logo, h1 {
+    font-size: 60px;
+    color: rgb(241, 0, 141);
+    
+}
+
+.logo span {
+    color: darkblue;
+}
+
+/* Menu */
+.menu {
+    flex:55%;
+   /* border:1px solid green;*/
+    text-align:right;
+    padding:60px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 30px;
+    color:darkblue;
+    padding:20px 16px; 
+}
+
+.menu a:hover {
+    color: rgb(241, 0, 141);
+    border-top: 4px solid whitesmoke;
+}
+
+/* --BOTÕES-- */
+.fale-conosco {
+    right: 20px;     
+    bottom: 20px;    
+    border: 1em;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #4568dc, rgb(241, 0, 141));
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: white;
+    transition: background-color 0.3s ease;
+    animation: flutuarButton 2s infinite ease-in-out;
+    z-index: 1000; 
+}
+
+.fale-conosco:hover {
+    background-image: linear-gradient(-45deg, #4568dc, rgb(241, 0, 141));
+    cursor: pointer;
+    box-shadow: 0 10px 23px rgba(128, 128, 128, 0.1);
+    transform: scale(1.10);
+}
+
+.fale-conosco.text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #4568dc, rgb(241, 0, 141));
+}
+
+.fale-conosco:after {
+    content: "";
+    border-radius: 18px;
+    position: absolute;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(245, 245, 245, 0.534);
+}
+
+.fale-conosco{
+    margin-right: 30px;
+}
+
+.fixed_bn30 {
+    position: fixed; 
+    right: 20px;     
+    bottom: 20px;    
+    border: 5em;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #4568dc, rgb(241, 0, 141));
+    padding: 0.7em 2em;
+    border-radius: 65px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: white;
+    transition: background-color 0.3s ease;
+    animation: flutuarButton 2s infinite ease-in-out;
+    z-index: 1000; 
+}
+
+.fixed_bn30.text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #4568dc, rgb(241, 0, 141));
+}
+
+.fixed_bn30:after {
+    content: "";
+    border-radius: 18px;
+    position: absolute;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: rgb(0, 0, 63);
+}
+
+.fixed_bn30:hover {
+    background-color:darkblue;
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #4568dc, rgb(241, 0, 141));
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+.fixed_bn30:hover .text {
+    background-image: linear-gradient(-45deg, #4568dc, rgb(241, 0, 141));
+}
+
+
+  @keyframes flutuarButton {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* Separador */
+.separator {
+    height: 2px;
+    margin-top: 484px;
+    box-shadow: 0 0 6px 6px rgba(59, 59, 59, 0.61);
+    position: sticky;
+   
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-color: #fff;
+    padding: 35px 10px;
+    text-align: center;
+    position: sticky;
+    margin-top: -1px;
+}
+
+.hero-banner h2 {
+    color:black;
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 40px;
+}
+
+.hero-banner p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    display: inline-block;
+    line-height: 1.8;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: black;
+}
+
+/* Seções */
+section {
+    padding: 70px 52px;
+    background-color: #fff;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: black;
+    
+}
+
+/* Serviços */
+.servicos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 3px solid rgb(241, 0, 141); 
+    border-radius: 10px;
+    line-height: 1.5;
+    margin-top: 25px;
+    padding: 32px;
+    width: 30%;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color:rgb(253, 100, 189);
+    box-shadow: 0 5px 15px darkblue;
+} 
+
+.card h3{
+    text-align: left;
+    font-weight: bold;
+    margin-top: 35px;
+    
+}
+    
+.card p{
+    color: black;
+    display: flex;
+    text-align: left;
+    font-weight:bolder;
+    margin-bottom: 30px;
+}
+
+
+.card i{
+    display: flex;
+    align-items: flex-end;
+    font-size: 60px;
+    color: darkblue;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: rgb(241, 0, 141);
+    box-shadow: 0 0 5px 5px rgba(59, 59, 59, 0.658);
+    padding: 60px;
+    width: 100%;
+    color: white;
+    position: relative;
+    margin-top: auto; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.logo-rodape {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-left: 0;
+}
+
+.logo-rodape h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    margin-bottom: 15px; 
+}
+
+/* Estilos para a seção de redes sociais no rodapé */
+.social-media {
+    display: flex;
+    gap: 25px; 
+    justify-content: left; 
+    padding-bottom: 40px;
+}
+.social-media a {
+    text-decoration: none;
+    color: white; 
+    font-size: 30px; 
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color:darkblue; 
+}

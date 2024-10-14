@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Formulário</title>
+</head>
+
+<section method="post" class="form-rodape pt-3" novalidate>
+    <input type="hidden" name="utm_source" value="">
+    <input type="hidden" name="utm_medium" value="">
+    <input type="hidden" name="utm_campaign" value="">
+<h1>Fale Conosco</h1>
+    <div class="form-group">
+        <input class="form-control" type="text" placeholder="Nome" name="nome" required>
+        <label for="nome" class="error">Por favor preencha o campo Nome</label>
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" type="email" placeholder="E-mail" name="email" required>
+        <label for="email" class="error">Por favor preencha o campo Email</label>
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" type="text" minlength="15" maxlength="15" placeholder="Telefone" name="telefone" required>
+        <label for="telefone" class="error">Por favor preencha o campo Telefone</label>
+    </div>
+
+    <div class="form-group form-check">
+        <input type="checkbox" name="politica" class="form-check-input" value="Sim" required>
+        <label class="form-check-label">
+            Declaro ter lido e aceito integralmente os termos e condições da
+            <a href="/politica-de-privacidade.php" target="_blank"><strong class="link-politica">Política de Privacidade.</strong></a>
+        </label>
+        <label for="politica" class="error">Este campo é requerido.</label>
+    </div>
+   
+
+    <div class="text-right">
+        <button class="btn btn-warning px-4" type="submit">Enviar</button>
+    </div>
+    <a href="index.html"><button class="bn30">Voltar</button></a>
+</section>
+
+</html>
